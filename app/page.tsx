@@ -7,6 +7,8 @@ import Link from "next/link";
 
 export const revalidate = 30; // revalidate at most 30 seconds
 
+export const runtime = "edge";
+
 async function getData() {
   const query = `
   *[_type == 'blog'] | order(_createdAt desc) {
