@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
-export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "Create Next App",

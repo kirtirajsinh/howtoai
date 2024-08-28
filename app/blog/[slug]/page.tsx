@@ -6,8 +6,6 @@ import { ImageComponent } from "@/components/ImageComponent";
 
 export const revalidate = 30; // revalidate at most 30 seconds
 
-export const runtime = "edge";
-
 async function getData(slug: string) {
   const query = `
     *[_type == "blog" && slug.current == '${slug}'] {
